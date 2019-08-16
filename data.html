@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Data Visualization</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a href="index.html" class="navbar-brand bg-info text-white p-2">
+                        Latitude
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+
+                                <div class="dropdown show">
+                                        <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Plots
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="maxtemperature.html">
+                                              Max Temperature
+                                        </a>
+                                          <a class="dropdown-item" href="humidity.html">
+                                              Humidity
+                                          </a>
+                                          <a class="dropdown-item" href="cloudiness.html">
+                                              Cloudiness
+                                          </a>
+                                          <a class="dropdown-item" href="windspeed.html">
+                                              Wind Speed
+                                          </a>
+                                        </div>
+                                </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="comparison.html" class="nav-link"> Comparison </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="data.html" class="nav-link"> Data </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+        </nav>
+        <hr>
+<div class="container">
+    <div class="lead">
+        <h1>Data</h1>
+    </div>
+</div>
+
+
+<!-- Bootstrap Table -->
+<table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">0</th>
+            <th scope="col">City_ID</th>
+            <th scope="col">City</th>
+            <th scope="col">Cloudiness</th>
+            <th scope="col">Country</th>
+            <th scope="col">Date</th>
+            <th scope="col">Humidity</th>
+            <th scope="col">Lat</th>
+            <th scope="col">Lng</th>
+            <th scope="col">Max Temp</th>
+            <th scope="col">Wind Speed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>0</td>
+            <td>Jacareacanga</td>
+            <td>0</td>
+            <td>BR</td>
+            <td>1528902000</td>
+            <td>62</td>
+            <td>-6.22</td>
+            <td>-57.76</td>
+            <td>89.6</td>
+            <td>6.93</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>1</td>
+            <td>Kaitangata</td>
+            <td>100</td>
+            <td>NZ</td>
+            <td>1528905304</td>
+            <td>94</td>
+            <td>-46.28</td>
+            <td>169.85</td>
+            <td>42.61</td>
+            <td>5.64</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>2</td>
+            <td>Goulburn</td>
+            <td>20</td>
+            <td>AU</td>
+            <td>1528905078</td>
+            <td>91</td>
+            <td>-34.75</td>
+            <td>149.72</td>
+            <td>44.32</td>
+            <td>10.11</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>3</td>
+            <td>Lata</td>
+            <td>76</td>
+            <td>IN</td>
+            <td>1528905305</td>
+            <td>89</td>
+            <td>-30.78</td>
+            <td>78.62</td>
+            <td>59.89</td>
+            <td>0.94</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>4</td>
+            <td>Chokurdakh</td>
+            <td>0</td>
+            <td>RU</td>
+            <td>1528905306</td>
+            <td>88</td>
+            <td>70.62</td>
+            <td>147.9</td>
+            <td>32.17</td>
+            <td>2.95</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>5</td>
+            <td>Martyush</td>
+            <td>92</td>
+            <td>RU</td>
+            <td>1528905306</td>
+            <td>94</td>
+            <td>-56.4</td>
+            <td>61.89</td>
+            <td>55.03</td>
+            <td>9.33</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>6</td>
+            <td>Hobart</td>
+            <td>20</td>
+            <td>AU</td>
+            <td>1528902000</td>
+            <td>87</td>
+            <td>-42.88</td>
+            <td>147.33</td>
+            <td>44.6</td>
+            <td>8.05</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>7</td>
+            <td>Broken Hill</td>
+            <td>0</td>
+            <td>AU</td>
+            <td>1528905311</td>
+            <td>88</td>
+            <td>-31.97</td>
+            <td>141.45</td>
+            <td>44.5</td>
+            <td>7.31</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>8</td>
+            <td>Harnosand</td>
+            <td>0</td>
+            <td>SE</td>
+            <td>1528903200</td>
+            <td>44</td>
+            <td>-62.63</td>
+            <td>17.94</td>
+            <td>60.8</td>
+            <td>13.87</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>9</td>
+            <td>Tuatapere</td>
+            <td>0</td>
+            <td>NZ</td>
+            <td>1528905312</td>
+            <td>100</td>
+            <td>-46.13</td>
+            <td>167.69</td>
+            <td>38.92</td>
+            <td>3.4</td>
+          </tr>
+        </tbody>
+</table>
+
+
+
+
+<!-- Not Formmated Table: Inline styles -->
+<!--    <table>
+
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>0</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>jacareacanga</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>0</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>BR</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>1528902000</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>62</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>-6.22</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>-57.76</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>89.6</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>6.93</p>
+            </td>
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>1</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>kaitangata</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>100</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>NZ</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>1528905304</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>94</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>-46.28</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>169.85</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>42.61</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>5.64</p>
+            </td>
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>2</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>goulburn</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>20</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>AU</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>1528905078</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>91</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>-34.75</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>149.72</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>44.32</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>10.11</p>
+            </td>
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>3</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>lata</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>76</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>IN</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>1528905305</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>89</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>30.78</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>78.62</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>59.89</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>0.94</p>
+            </td>
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>4</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>chokurdakh</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>0</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>RU</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>1528905306</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>88</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>70.62</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>147.9</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>32.17</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>2.95</p>
+            </td>
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>5</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>martyush</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>92</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>RU</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>1528905306</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>94</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>56.4</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>61.89</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>55.03</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>9.33</p>
+            </td>
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>6</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>hobart</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>20</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>AU</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>1528902000</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>87</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>-42.88</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>147.33</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>44.6</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>8.05</p>
+            </td>
+            </tr>
+            <tr valign=top>
+            <td style="border-style: inset;">
+            <p>7</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>broken hill</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>0</p>
+            </td>
+            <td style="border-style: inset;">
+            <p>AU</p>
+            </td>
+            <td style="border-style: inset;">
+-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+</body>
+</html>
